@@ -4,9 +4,9 @@ Sitio estático de una página en español. Ábrelo mediante un servidor local (
 
 ## Publicación
 
-El dominio definitivo todavía no se ha indicado. Antes de publicar, sustituye el bloque `PUBLICACIÓN OBLIGATORIA` de `index.html` por estas tres URLs absolutas del dominio real: `link rel="canonical"`, `meta property="og:url"` y `meta property="og:image"`. No se ha supuesto ningún dominio para este proyecto.
+El dominio canónico del sitio es `https://vapsolosixer.es/`. `index.html` utiliza URLs absolutas de este dominio en `canonical`, Open Graph y JSON-LD.
 
-`robots.txt` permite el rastreo. Genera `sitemap.xml` únicamente después de conocer el dominio definitivo, porque sus entradas `loc` deben ser URLs canónicas absolutas.
+`robots.txt` permite el rastreo y enlaza `sitemap.xml`, cuya entrada utiliza la URL canónica absoluta.
 
 El favicon utiliza los archivos proporcionados: `favicon.ico`, `favicon-96x96.png`, `apple-touch-icon.png`, `web-app-manifest-192x192.png` y `web-app-manifest-512x512.png`. El manifiesto PWA se encuentra en `site.webmanifest`.
 
